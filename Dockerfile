@@ -7,3 +7,5 @@ COPY ./app /app
 RUN pip install Flask
 
 CMD ["python", "index.py"]
+
+EXPOSE 80 2222
