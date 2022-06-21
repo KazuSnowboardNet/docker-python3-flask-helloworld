@@ -3,14 +3,14 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- staging
+- main
 
 resources:
 - repo: self
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '0f4d54e3-b68e-4875-bfec-3ec518c3676d'
+  dockerRegistryServiceConnection: '37711448-924a-4ae8-ba4a-02aed35cf929'
   imageRepository: 'kazusnowboardnetdockerpythonflaskhelloworld'
   containerRegistry: 'jeapctokitadepopstestacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
